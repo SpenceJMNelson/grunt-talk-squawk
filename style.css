@@ -44,7 +44,7 @@ body {
 
 
 
-.front-page.hp-loaded {
+.front-page {
 	width:100vw;
 	height:100vh;
 	position: fixed;
@@ -94,7 +94,7 @@ body {
 }
 
 
-.background-elements img{
+.hp-loaded .background-elements img{
 	position: absolute;
 	width:100%;
 	max-width: 960px;
