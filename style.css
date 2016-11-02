@@ -175,14 +175,13 @@ body {
 
 .front-page img {
 	width:100%;
-	max-width: 800px;
+	
 }
 
 
 .hp-loaded .background-elements img{
 	position: absolute;
 	width:100%;
-	max-width: 960px;
 	left:50%;
 	-webkit-transform:scale(1) translateX(-50%);
 	        transform:scale(1) translateX(-50%);
