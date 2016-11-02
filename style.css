@@ -543,21 +543,25 @@ p.notes {
 
 .initial-navigation a:after {
 	position:absolute;
-	-webkit-transform:translateY(100%) translateX(-50%);
-	        transform:translateY(100%) translateX(-50%);
+	-webkit-transform:translateY(300%) translateX(-50%);
+	        transform:translateY(300%) translateX(-50%);
 	-webkit-transition: 300ms;
-	transition: 300ms;
 	opacity:0;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 	color:#fff;
 	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	font-size: 13px;
+	transition:2000ms;
+	color:#fff;
+	text-decoration: none;
 }
 
 .initial-navigation a:hover:after {
 	opacity:1;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-	-webkit-transform:translateY(300%) translateX(-50%);
-	        transform:translateY(300%) translateX(-50%);
+	letter-spacing: .3em;
 }
 
 a[href="#chapter-1"]:after {
