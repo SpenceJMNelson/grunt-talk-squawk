@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,300i,400,400i,500,500i,600,600i,700,700i');
+
 
 html, body, div, span, p, a, del, em, img, ol, ul, li, fieldset, form, label {
 	margin: 0;
@@ -7,7 +8,8 @@ html, body, div, span, p, a, del, em, img, ol, ul, li, fieldset, form, label {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Cormorant Garamond', serif;
+	font-weight: 100
 }
 
 ::-webkit-scrollbar { 
@@ -16,6 +18,7 @@ html, body, div, span, p, a, del, em, img, ol, ul, li, fieldset, form, label {
 
 body {
     overflow: hidden;
+    height:auto!important;
 }
 
 /* Preloader */
@@ -260,10 +263,10 @@ img.element-7 {
 .interior-navigation{
 	position:fixed;
 	z-index: 99;
-	height:100%;
+	transform:translateY(-50%);
+	top:50%;
 	right:0;
-	-webkit-transform: translate3d(0, 0, 0);
-   transform: translate3d(0, 0, 0);
+	
   /* Other transform properties here */
 }
 
@@ -287,6 +290,10 @@ img.element-7 {
 	background-repeat: no-repeat;
 	-webkit-transition: 300ms;
 	transition: 300ms;
+}
+
+.home-icon {
+	background-size: 15px!important;
 }
 
 .interior-navigation:hover ul li a{
@@ -354,7 +361,6 @@ img.element-7 {
  background-repeat:no-repeat;
  background-position: center 0px;
  background-size:100%;
- font-family: sentinel;
  font-weight: 100;
  background-attachment: fixed;
  overflow:hidden;
@@ -434,9 +440,24 @@ img.element-7 {
 	max-width: 500px;
 }
 
+.section.section-9 {
+	background-position: no-repeat center;
+	background-color: #41414e;
+}
+
+.section.section-9 .lettering {
+	max-width: 500px;
+}
+
 .number {
 	display:inline-block;
 	border-bottom:1px solid;
+	text-transform: uppercase;
+	letter-spacing: .3em;
+}
+
+.number.dark {
+	color:#000;
 }
 
 .intro-content-outer {
@@ -454,7 +475,7 @@ img.element-7 {
 }
 
 .intro-content .number {
-	padding:2em 0;
+	padding:0 0 2em 0;
 	margin-bottom: 2em;
 }
 
@@ -474,6 +495,7 @@ p {
 	text-align: center;
 	line-height: 1.5;
 	margin-bottom: 2em;
+	font-size: 24px;
 }
 
 .story-text {
@@ -498,23 +520,25 @@ p.notes {
 .interior-navigation a:after {
 	position:absolute;
 	top:50%;
-	-webkit-transform:translateX(0%);
-	        transform:translateX(0%);
-	-webkit-transform:translateY(-50%);
-	        transform:translateY(-50%);
+	-webkit-transform:translateX(-90%) translateY(-50%);
+	        transform:translateX(-90%) translateY(-50%);
 	-webkit-transition: 300ms;
 	transition: 300ms;
+	letter-spacing: .1em;
+	text-transform: uppercase;
 	opacity:0;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 	color:#fff;
-	font-size: 12px;
+	font-size: 8px;
+	text-align:right;
+	width:200px;
 }
 
 .interior-navigation a:hover:after {
 	opacity:1;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-	-webkit-transform:translateX(-100%);
-	        transform:translateX(-100%);
+	-webkit-transform:translateX(-110%) translateY(-50%);
+	        transform:translateX(-110%) translateY(-50%);
 }
 
 .initial-navigation a:after {
@@ -576,5 +600,24 @@ a[href="#chapter-7"]:after {
 	content:"blink";
 	opacity:0;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+
+.final-cta {
+	border:solid 1px rgba(255,255,255,.4);
+	display: inline-block;
+	padding:1em;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	margin-top: 1em;
+	font-size: 13px;
+	transition:2000ms;
+	color:#fff;
+	text-decoration: none;
+}
+
+
+.final-cta:hover {
+	border:solid 1px rgba(255,255,255,1);
+	letter-spacing: .3em;
 }
 
