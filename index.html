@@ -2,12 +2,9 @@
 <html>
 <head>
 	<meta charset="utf-8">
-
+	 <meta http-equiv="refresh" content="300">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
 	<title>Grunt, Talk, Squawk</title>
-
-
 	<link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
@@ -394,29 +391,37 @@ skrollr.menu.init(s, {
 
 
 <script>
+
 $( document ).ready(function() {
 	function scroll() {
-	$('body').animate({
-	scrollTop: amount
-	}, 3, 'linear',function() {
-	if (amount != '') {
-	scroll();
+		$('body').animate({
+		scrollTop: amount
+		}, 3, 'linear',function() {
+		if (amount != '') {
+		scroll();
+		}
+		});
 	}
-	});
-	}
+
 	$('#hover').hover(function() {
-	amount = '+=10';
-	scroll();
-	}, function() {
-	amount = '';
+		amount = '+=10';
+		scroll();
+		}, function() {
+		amount = '';
 	});
+
 	$('#hover2').hover(function() {
-	amount = '-=10';
-	scroll();
-	}, function() {
-	amount = '';
+		amount = '-=10';
+		scroll();
+		}, function() {
+		amount = '';
 	});
 });
+
+setTimeout(function(){
+   window.location.reload(1);
+}, 300000);
+
 </script>
 
 	
