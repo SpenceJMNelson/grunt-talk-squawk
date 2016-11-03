@@ -25,7 +25,11 @@
 		<li><a href="#chapter-6" style="background-image: url(img/icon6.png);" data-menu-duration="3000"></a></li>
 		<li><a href="#chapter-7" style="background-image: url(img/icon7.png);" data-menu-duration="3000"></a></li>
 	</ul>
+
+	
 </div>
+
+<div class="scroll-hover"> <div id="hover"></div><div id="hover2"></div> </div>
 
 <div class="front-page">
 
@@ -73,6 +77,7 @@
 				Scientists speculate that early humans used an early form of language sometimes referred to as “hmmmm”, a proto-language that had the qualities of being “Holistic, manipulative, multi-modal, musical and mimetic”, as far back as two million years ago.
 			</p>
 			<img class="story-text" src="img/story-text-1.png">
+			
 			
 		</div>
 	</div>
@@ -365,6 +370,8 @@ skrollr.menu.init(s, {
 			$( ".front-page" ).toggleClass( "hide" );
 		});
 	});
+
+
 		
 	</script>
 
@@ -380,6 +387,36 @@ skrollr.menu.init(s, {
             $( ".front-page" ).addClass( "hp-loaded" );
         })
     //]]>
+    var amount = '';
+
+
+</script>
+
+
+<script>
+$( document ).ready(function() {
+	function scroll() {
+	$('body').animate({
+	scrollTop: amount
+	}, 3, 'linear',function() {
+	if (amount != '') {
+	scroll();
+	}
+	});
+	}
+	$('#hover').hover(function() {
+	amount = '+=10';
+	scroll();
+	}, function() {
+	amount = '';
+	});
+	$('#hover2').hover(function() {
+	amount = '-=10';
+	scroll();
+	}, function() {
+	amount = '';
+	});
+});
 </script>
 
 	
