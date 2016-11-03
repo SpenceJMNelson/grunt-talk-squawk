@@ -393,10 +393,19 @@ skrollr.menu.init(s, {
 <script>
 
 $( document ).ready(function() {
+
+// Add custom jQuery easing
+// https://github.com/gdsmith/jquery.easing
+$.extend($.easing, {
+  easeOutExpo: function(x, t, b, c, d) {
+    return (t == d) ? b + c : c * (-Math.pow(2, -10 * t / d) + 1) + b;
+  }
+});
+	
 	function scroll() {
 		$('body').animate({
 		scrollTop: amount
-		}, 3, 'linear',function() {
+		}, 3, 'easeOutExpo',function() {
 		if (amount != '') {
 		scroll();
 		}

@@ -110,7 +110,36 @@ body {
     left:50%; /* centers the loading animation horizontally one the screen */
     top:50%; /* centers the loading animation vertically one the screen */
     -webkit-transform:translateX(-50%) translateY(-50%);
+
 }
+
+#status:after {
+	content:"";
+	width:3em;
+	height:3em;
+	position: absolute;
+	left:50%;
+	top:50%;
+	transform:translateX(-50%) translateY(10%);
+	background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: bg-cycle 1000ms steps(10) infinite;
+}
+
+@keyframes bg-cycle {
+	0% {background-image: url(img/icon1.png);}
+  	14%   {background-image: url(img/icon2.png);}
+  	29%   {background-image: url(img/icon3.png);}
+  	43% {background-image: url(img/icon4.png);}
+  	57%   {background-image: url(img/icon5.png);}
+  	71%   {background-image: url(img/icon6.png);}
+  	85% {background-image: url(img/icon7.png);}
+  	100% {background-image: url(img/icon1.png);}
+  
+  
+}
+
 
 .loader,
 .loader:before,
@@ -123,12 +152,18 @@ body {
   text-indent: -99999em;
   margin: 55px auto;
   position: relative;
+  
   width: 10em;
   height: 10em;
-  box-shadow: inset 0 0 0 1em;
+  box-shadow: inset 0 0 0 .2em;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
+
 }
+
+
+
+
 .loader:before,
 .loader:after {
   position: absolute;
