@@ -484,6 +484,14 @@ img.element-7 {
 	max-width: 600px;
 }
 
+.snow-animation {
+	position:absolute;
+	top:0;
+	width:100%;
+	left:0;
+	mix-blend-mode: screen;
+}
+
 .section.section-3 {
 	background-image:url(img/ch02-bg.jpg);
 	color:#000;
@@ -496,8 +504,8 @@ img.element-7 {
 
 
 .section.section-4 {
-	background-image:url(img/ch03-bg.jpg);
-	background-color: #35394c;
+	background:none;
+	color:#000;
 }
 
 .section.section-4 .lettering {
