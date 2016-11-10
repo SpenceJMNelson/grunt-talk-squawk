@@ -492,6 +492,17 @@ img.element-7 {
 	mix-blend-mode: screen;
 }
 
+
+.fire-animation {
+	position: fixed;
+    top: 20vw;
+    left: 50%;
+    width: 30%;
+    transform:translateX(-50%) translateY(0%);
+    mix-blend-mode: screen;
+}
+
+
 .section.section-3 {
 	background-image:url(img/ch02-bg.jpg);
 	color:#000;
@@ -533,7 +544,7 @@ img.element-7 {
 
 .section.section-7 {
 	background-image:url(img/ch06-bg.png),url(img/ch06bg-btm.jpg);
-	background-position:top center, bottom center;
+	background-position:0% center, 100% center;
 	color:#000;
 	background-color: #2c2d32;
 }
@@ -598,7 +609,7 @@ img.element-7 {
 
 
 .lettering {
-	
+	width:90%;
 }
 
 p {

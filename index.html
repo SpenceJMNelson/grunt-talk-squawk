@@ -66,7 +66,7 @@
 			<div class="intro-content">
 				<span class="number">Chapter I</span>
 				<div></div>
-				<img class="lettering" src="img/ch01-lettering.png"/>
+				<img class="lettering" src="img/ch01-lettering.png" />
 			</div>
 		</div>
 		<div class="text-content">
@@ -78,6 +78,8 @@
 			
 		</div>
 	</div>
+<img class="fire-animation" src="img/fire.gif" data-start="opacity:1; transform:translateX(-50%) translateY(0%);" data-1000-start="opacity:0; transform:translateX(-50%) translateY(-10%);"/>
+			
 </div>
 
 <div id="chapter-2" class="section section-3" data-bottom-top="background-position:50% 0px;" data-top-bottom=" background-position:50% -300px;">
@@ -129,7 +131,7 @@
   <source src="img/baby.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
-	<div class="screen" data-top="background-color:rgba(170,177,175,0);" data-top-bottom="background-color:rgba(170,177,175,1);">
+	<div class="screen" data-top="background-color:rgba(170,177,175,0);" data-top-bottom="background-color:rgba(255,255,255,1);">
 		<div class="intro-content-outer" data-bottom-top="-webkit-transform:translateY(-300px);" data-top-bottom="-webkit-transform:translateY(300px);">
 			<div class="intro-content">
 				<span class="number dark">Chapter III</span>
@@ -225,7 +227,7 @@ of two-word utterances such as “my toy” between 18-24 months."
 	</div>
 </div>
 
-<div id="chapter-6" class="section section-7" data-bottom-top="background-position:50% 0px;" data-top-bottom=" background-position:50% -300px;">
+<div id="chapter-6" class="section section-7" data-bottom-top="background-position:50% 0%, 50% 100%;" data-top-bottom="background-position:50% -400%, 50% 0%;">
 	<div class="screen" data-top="background-color:rgba(198,209,214,0);" data-top-bottom="background-color:rgba(198,209,214,1);">
 		<div class="intro-content-outer" data-bottom-top="-webkit-transform:translateY(-300px);" data-top-bottom="-webkit-transform:translateY(300px);">
 			<div class="intro-content">
@@ -313,7 +315,7 @@ of two-word utterances such as “my toy” between 18-24 months."
 
 	<script type="text/javascript">
 
-	var s = skrollr.init([smoothScrolling=true]);
+	var s = skrollr.init([smoothScrolling=false]);
 
 //The options (second parameter) are all optional. The values shown are the default values.
 skrollr.menu.init(s, {
