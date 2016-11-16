@@ -408,7 +408,6 @@ img.element-7 {
 .interior-navigation:hover ul li a:hover{
 	opacity: 1;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-	background:none;
 }
 
 .initial-navigation{
